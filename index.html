@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ColoShop</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top notice bar -->
+    <div class="topbar">
+      <div class="topbar-text">
+        <p>FREE SHIPPING ON ALL U.S ORDERS OVER $50</p>
+      </div>
+
+      <div class="topbar-option">
+        <select name="currency">
+          <option value="usd">USD</option>
+          <option value="egp">LE</option>
+        </select>
+
+        <select name="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+        </select>
+
+        <select name="account">
+          <option value="my-account">My Account</option>
+          <option value="login">Login</option>
+        </select>
+      </div>
+    </div>
+    <!-- Top bar end -->
+
+    <!-- Header / Navbar -->
+    <header id="site-header" class="header container">
+      <div class="logo">COLO<span class="logo-accent">SHOP</span></div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav">
+        <div class="nav-links">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="index.html#shop">Shop</a></li>
+            <li><a class="nav-link" href="#">Promotion</a></li>
+            <li><a class="nav-link" href="#">Pages</a></li>
+            <li><a class="nav-link" href="index.html#blog">Blog</a></li>
+            <li>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        
+        <div class="nav-utility">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <div class="hero-left">
+          <p class="hero-text">Spring / Summer Collection 2017</p>
+          <h1>
+            Get up to <span class="accent">30% Off</span><br />New Arrivals
+          </h1>
+          <a class="btn btn-primary" href="#shop">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/images/436567757652315460.jpg" alt="model-girl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals / Filters -->
+    <section id="shop" class="section">
+      <div class="container">
+        <h2 class="section-title center">New Arrivals</h2>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+          <button id="search-btn" class="btn btn-primary">search</button>
+          <input type="text" id="search" placeholder=" Search products..."/>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="women">Women's</button>
+          <button class="filter-btn" data-filter="accessories">
+            Accessories
+          </button>
+          <button class="filter-btn" data-filter="men">Men's</button>
+        </div>
+
+        <div id="products" class="products-grid">
+          <!-- product cards injected here by JS -->
+        </div>
+
+        <div id="products-empty" class="empty hidden">No products found.</div>
+
+        <!-- Pagination -->
+        <div id="pagination"></div>
+      </div>
+    </section>
+
+    <!-- Info bar -->
+    <section class="info-bar">
+      <div class="container info-items">
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="item-content">
+            <p>
+              <strong>Free Shipping</strong><br />
+              <span>On orders over $50</span>
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-money-bill-1"></i></div>
+          <div class="item-content">
+            <p>
+              <strong>Cash on Delivery</strong><br />
+              <span>Pay when you receive</span>
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+          </div>
+          <div class="item-content">
+            <p>
+              <strong>45 Days Return</strong><br />
+              <span>Money back guarantee</span>
+            </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+          <div class="item-content">
+            <p>
+              <strong>Open All Week</strong><br />
+              <span>8am — 9pm</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog previews -->
+    <section id="blog" class="section pale">
+      <div class="container">
+        <h2 class="section-title center">Latest Blogs</h2>
+        <div class="blog-cards">
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8ec805ad5e1c0daf9f2cb6be4a1cda93"
+              alt=""
+            />
+            <h3>Summer Style Guide</h3>
+          </div>
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9a21a5d6f2baf3c0ddfbb37e6cdf6b9f"
+              alt=""
+            />
+            <h3>Best Accessories 2025</h3>
+          </div>
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a8b7f9b6f7c6b8b0c0d2b3c4d5e6f7a"
+              alt=""
+            />
+            <h3>How to mix & match</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            id="newsletter-email"
+            type="email"
+            placeholder="Your email"
+            required
+          />
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-links-pages">
+            <a href="#blog">Blog</a>
+            <a href="">FAQs</a>
+            <a href="#contact">Contact us</a>
+          </div>
+          <div class="footer-links-social-media">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-skype"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">
+        © 2018 — All Right Reserved. Made with Love by
+        <span>Mark Atef</span> & distributed by <span>Theme Wangan.</span>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

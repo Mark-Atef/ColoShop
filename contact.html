@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ColoShop</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top notice bar -->
+    <div class="topbar">
+      <div class="topbar-text">
+        <p>FREE SHIPPING ON ALL U.S ORDERS OVER $50</p>
+      </div>
+
+      <div class="topbar-option">
+        <select name="currency">
+          <option value="usd">USD</option>
+          <option value="egp">LE</option>
+        </select>
+
+        <select name="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+        </select>
+
+        <select name="account">
+          <option value="my-account">My Account</option>
+          <option value="login">Login</option>
+        </select>
+      </div>
+    </div>
+    <!-- Top bar end -->
+
+    <!-- Header / Navbar -->
+    <header id="site-header" class="header container">
+      <div class="logo">COLO<span class="logo-accent">SHOP</span></div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav">
+        <div class="nav-links">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="index.html#shop">Shop</a></li>
+            <li><a class="nav-link" href="#">Promotion</a></li>
+            <li><a class="nav-link" href="#">Pages</a></li>
+            <li><a class="nav-link" href="index.html#blog">Blog</a></li>
+            <li>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        
+        <div class="nav-utility">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Breadcrumb + map + contact -->
+    <section class="section contact-page">
+      <div class="navigation"></div>
+      <div class="container contact-content">
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110489.77288310922!2d30.86863559726561!3d30.071112000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b979b7d1dd9%3A0x88f29d027c44f959!2sITI%20Information%20Technology%20Institute%20-%20Smart%20Village%20Branch!5e0!3m2!1sen!2seg!4v1755026156052!5m2!1sen!2seg"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-text">
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>
+              There are many ways to contact us. You may drop a line, give us a
+              call or send an email.
+            </p>
+            <p><strong>Phone:</strong> (800) 686-6688</p>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Hours:</strong> Mon-Fri 8:00 - 18:00</p>
+
+            <h3>Follow Us</h3>
+            <div class="socials">
+              <a href="#" aria-label="facebook" class="f"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="twitter" class="t"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="g"><i class="fa-brands fa-square-google-plus"></i></a>
+              <a href="#" aria-label="instagram" class="i"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Get In Touch With Us!</h3>
+            <p>Fill out the form below to receive a free and confidential.</p>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                  class="form-style"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="form-style"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  placeholder="Website"
+                  class="form-style"
+                />
+              </div>
+              <div class="form-row">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                  class="form-style"
+                ></textarea>
+              </div>
+              <div class="form-row">
+                <button class="btn btn-primary" type="submit">
+                  Send Message
+                </button>
+              </div>
+              <div id="contact-feedback" class="feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            id="newsletter-email"
+            type="email"
+            placeholder="Your email"
+            required
+          />
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-links-pages">
+            <a href="#blog">Blog</a>
+            <a href="">FAQs</a>
+            <a href="#contact">Contact us</a>
+          </div>
+          <div class="footer-links-social-media">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-skype"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">
+        © <span id="year">2018</span>— All Right Reserved. Made with Love by
+        Mark Atef & distributed by Theme Wangan
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
