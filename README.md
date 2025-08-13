@@ -69,14 +69,14 @@ ColoShop/
 
 1. **Clone the repository**  
    ```
-   git clone https://github.com/YOUR_GITHUB_USERNAME/ColoShop.git
+   git clone https://github.com/Mark-Atef/ColoShop.git
 2. Open the project folder.
 
 3. Double-click the index.html file to open it in your browser.
 
 2. ## 🚀 Live Demo
 
-- 🔗 [Live View](https://mark-atef.github.io/Rebuilding-a-UI-Using-a-UI-Framework-Movies-Website/)
+- 🔗 [Live View](https://mark-atef.github.io/ColoShop/)
 
 ---
 
